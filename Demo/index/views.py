@@ -14,3 +14,14 @@ def index_api(request):
     """
 
     return Response({'data': 'Hello World'}, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+def sample_api(request):
+    """
+        Index Api
+    :param request: request
+    :return: Response
+    """
+
+    return Response({'data': 'New Api Record'}, status=status.HTTP_200_OK)
